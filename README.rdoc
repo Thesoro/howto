@@ -1,28 +1,10 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a basic app for creating How-To lists. 
 
-Things you may want to cover:
+Runs in Ruby 2.1 with Rails 4.0. Database is SQLite3. Tests can be run with <tt>rake test</tt>
 
-* Ruby version
+Steps belong to guides, guides have many steps. When entering new guides and steps, make sure to check that you have the step number correct. It can be changed later, though.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Rob Whitehead
+3/2/2014
