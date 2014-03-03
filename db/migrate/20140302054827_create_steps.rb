@@ -4,6 +4,7 @@ class CreateSteps < ActiveRecord::Migration
       t.string :text
       t.integer :parent_id
       t.integer :step_number
+      t.integer :id
 
       t.timestamps
     end

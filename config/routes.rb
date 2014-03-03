@@ -1,7 +1,7 @@
 HowTo::Application.routes.draw do
-  resources :steps
-
-  resources :guides
+  resources :guides do
+    resources :steps
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

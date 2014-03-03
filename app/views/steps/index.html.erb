@@ -18,9 +18,8 @@
         <td><%= step.text %></td>
         <td><%= step.parent_id %></td>
         <td><%= step.step_number %></td>
-        <td><%= link_to 'Show', step %></td>
-        <td><%= link_to 'Edit', edit_step_path(step) %></td>
-        <td><%= link_to 'Destroy', step, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Edit', edit_guide_step_path(step) %></td>
+        <td><%= link_to 'Destroy', guide_step_path, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +27,4 @@
 
 <br>
 
-<%= link_to 'New Step', new_step_path %>
+<%= link_to 'New Step', new_guide_step_path %>

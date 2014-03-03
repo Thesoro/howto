@@ -1,5 +1,5 @@
 class GuidesController < ApplicationController
-  before_action :set_guide, only: [:show, :edit, :update, :destroy]
+  before_filter :set_guide, :only => [:show, :edit, :update, :destroy]
 
   # GET /guides
   # GET /guides.json
@@ -69,6 +69,6 @@ class GuidesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def guide_params
-      params.require(:guide).permit(:topic)
+      params.require(:guide).permit(:topic, steps_attributes: [:text, :parent_id, :step_number])
     end
 end
